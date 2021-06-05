@@ -1,0 +1,12 @@
+.navbar-brand img {
+  width: 55vh;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  display: grid;
+}
+li.a {
+  justify-content: space-between;
+}
