@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.card {
+  border: none;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 4px;
+}
+li > a {
+  list-style: none;
+  color: #c29fa5;
+}
+li > a:active,
+li > a:hover {
+  list-style: none;
+  color: #423638;
+}
+
+.collor {
+  color: #c29fa5;
+  font-size: 4em;
+}
+
+.foot {
+  color: #c29fa5;
+  letter-spacing: 0.2px;
+}
