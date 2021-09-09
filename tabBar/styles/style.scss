@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+////  regular  plus & premium ////
+
+.container {
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  .nav-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  li {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+
+    a {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: lightgray;
+      text-decoration: none;
+      color: darkgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 400;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: gray;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.nav-tab-header .active a {
+  color: darkblue;
+  background-color: white;
+  position: relative;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.nav-tab-header .active {
+  border-top: 6px solid lightblue;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/////// inside style ///////
+
+.roundimg {
+  width: 200px;
+  height: 200px;
+}
+.checkmark {
+  font-size: 20px;
+  span {
+    font-size: 30px;
+    font-weight: 700;
+    color: blue;
+    margin-right: 6px;
+  }
+}
+.extra {
+  font-size: 20px;
+  color: lightgray;
+  img {
+    position: relative;
+    top: 5px;
+    margin-right: 4px;
+  }
+}
+
+#plus {
+  .extra p:nth-of-type(1) {
+    color: black;
+    span {
+      font-size: 30px;
+      font-weight: 700;
+      color: blue;
+      margin-right: 8px;
+    }
+    & img:nth-of-type(1) {
+      display: none;
+    }
+  }
+}
+
+#premium {
+  .extra p {
+    color: black;
+    span {
+      font-size: 30px;
+      font-weight: 700;
+      color: blue;
+      margin-right: 8px;
+    }
+  }
+}
