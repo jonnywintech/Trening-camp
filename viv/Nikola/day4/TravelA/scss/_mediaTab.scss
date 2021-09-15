@@ -1,0 +1,427 @@
+@media (max-width: 1024px) {
+  .flySmart .siconNtext {
+    transform: scale(0.8);
+  }
+  #gspecial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transform: scale(1.1);
+  }
+  .tabarea .textBtabs a {
+    justify-self: flex-end;
+    margin-right: 35px;
+  }
+
+  #hideme {
+    display: inline;
+  }
+  #emailft {
+    width: 500px;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 280px;
+    h2 {
+      font-weight: 300;
+    }
+    .mailinp {
+      width: auto;
+      @include flexCenter(column, wrap);
+      button {
+        display: block;
+        margin: auto;
+        left: 0;
+        top: 30px;
+        background-color: white;
+        color: $mediumBlue;
+        width: 250px;
+        height: 45px;
+        font-weight: 700;
+        span {
+          display: none;
+        }
+      }
+    }
+    #socialIcons {
+      display: none;
+    }
+  }
+
+  ////////////////////////////////////////
+
+  .map {
+    height: auto;
+    @include flexCenter(column, nowrap);
+    justify-content: flex-start;
+    border-bottom: 15px solid #38bdff;
+    .terms {
+      order: 3;
+      margin: 30px 0;
+    }
+    .paymethod {
+      order: 2;
+      margin: 0;
+      transform: scale(1.3);
+    }
+  }
+  #black-version {
+    @include flexCenter(column, nowrap);
+    margin: 25px 0;
+    .blackicons-wrap {
+      flex-direction: column;
+      width: 50px;
+      height: 50px;
+      .blackicons {
+        margin: 0 5px;
+        @include flexCenter(column, nowrap);
+        &:hover {
+          transition: 0.6s ease;
+          transform: scale(1.1);
+        }
+
+        & a {
+          display: flex;
+          width: 50px;
+          height: 50px;
+          border: 2px solid lightgray;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          transition: 0.6s ease;
+        }
+      }
+    }
+
+    h2 {
+      font-weight: 400;
+      color: $mediumBlue;
+      margin: 18px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles */
+
+  .navbar {
+    .left-side {
+      margin-left: 1px;
+      justify-content: flex-start;
+    }
+    .right-side {
+      margin-right: 9px;
+      justify-content: flex-end;
+    }
+  }
+  #logo {
+    margin-right: 8px;
+  }
+  ///  // / hero  ///////
+  main {
+    .hero {
+      height: 430px;
+      .arrows {
+        margin-right: 20px;
+      }
+      .hotDeals {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  /////  fly smart //////
+
+  .flySmart {
+    overflow: hidden;
+    .headlines {
+      h1 {
+        font-size: 1.9em;
+        margin-bottom: 32px;
+      }
+      h3 {
+        margin-top: 25px;
+        font-size: 0.9em;
+      }
+    }
+    .siconNtext {
+      transform: scale(1);
+      gap: 15px;
+      margin-bottom: 50px;
+      .scard {
+        margin-left: 10px;
+        width: 350px;
+        h3 {
+          margin-bottom: 10px;
+        }
+        .card-img {
+          margin-right: 16px;
+          img {
+            width: 72px;
+            height: 72px;
+          }
+        }
+      }
+    }
+  }
+
+  ///////////////// OFFERSS ////////////////////
+
+  #gspecial {
+    transform: scale(0.9);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 60px 0 45px 0;
+    .yellowbox > h3 {
+      position: relative;
+      top: -2px;
+      left: -14px;
+    }
+  }
+  #cardsh3 {
+    top: -50px;
+    font-weight: 400;
+    br {
+      display: none;
+    }
+  }
+  .blue-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .cards-wrap {
+      gap: 20px;
+      .card {
+        display: inline-block;
+        height: 350px;
+        width: 330px;
+
+        img {
+          width: 100%;
+        }
+        .bcard-text {
+          width: 100%;
+          height: 100%;
+          h3 {
+            margin-top: 0;
+            font-weight: 500;
+            font-size: 1.4em;
+            color: $greyDarkBlue;
+            text-shadow: 0 0 1px black;
+          }
+          h4 {
+            color: $greyDarkBlue;
+            margin-bottom: 12px;
+            filter: brightness(87%);
+            font-weight: 400;
+            font-size: 1.2em;
+            span {
+              font-size: 1em;
+            }
+          }
+          a {
+            font-size: 1.3em;
+          }
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /////////////// WHITE SPACE ////////////////
+
+  .break {
+    transform: scale(0.8);
+    height: auto;
+    h1 {
+      font-weight: 400;
+      color: $mediumBlue;
+    }
+  }
+
+  /////////// TABS AREA /////////////////
+
+  .tabarea {
+    .textBtabs {
+      h4 {
+        margin-top: 40px;
+        filter: brightness(87%);
+      }
+      h1 {
+        font-size: 2.2em;
+      }
+      p {
+        width: 85%;
+        filter: brightness(87%);
+      }
+      a {
+        left: 33%;
+      }
+    }
+    /// tabs ////
+
+    .active {
+      li > a {
+        font-weight: 600;
+      }
+    }
+
+    .container {
+      width: 94%;
+      margin-bottom: 35px;
+      .nav-wrap {
+        ul {
+          li {
+            height: 40px;
+            border-top-width: 4px;
+            a {
+              font-size: 1.4rem;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          .checkmark {
+            // span {
+            // }
+            p {
+              font-size: 0.9em;
+              text-shadow: 0px 0px 1px $mediumBlue;
+            }
+          }
+          .roundimg {
+            width: 130px;
+            height: 130px;
+            img {
+              margin: auto;
+              display: flex;
+              justify-self: center;
+              align-self: center;
+              width: 120px;
+              height: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #plus {
+    .extra {
+      p:nth-of-type(1) {
+        font-size: 0.9em;
+        text-shadow: 0px 0px 1px $mediumBlue;
+      }
+    }
+  }
+  #premium {
+    .extra {
+      p {
+        font-size: 0.9em;
+        text-shadow: 0px 0px 1px $mediumBlue;
+      }
+    }
+  }
+
+  ///////////////// FOOOOTER ///////
+  #hideme {
+    display: inline;
+  }
+  #emailft {
+    width: 500px;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 280px;
+    h2 {
+      font-weight: 300;
+    }
+    .mailinp {
+      width: auto;
+      @include flexCenter(column, wrap);
+      button {
+        display: block;
+        margin: auto;
+        left: 0;
+        top: 30px;
+        background-color: white;
+        color: $mediumBlue;
+        width: 250px;
+        height: 45px;
+        font-weight: 700;
+        span {
+          display: none;
+        }
+      }
+    }
+    #socialIcons {
+      display: none;
+    }
+  }
+
+  ////////////////////////////////////////
+
+  .map {
+    height: auto;
+    @include flexCenter(column, nowrap);
+    justify-content: flex-start;
+    border-bottom: 15px solid #38bdff;
+    .terms {
+      order: 3;
+      margin: 30px 0;
+    }
+    .paymethod {
+      order: 2;
+      margin: 0;
+      transform: scale(1.3);
+    }
+  }
+  #black-version {
+    @include flexCenter(column, nowrap);
+    margin: 25px 0;
+    .blackicons-wrap {
+      flex-direction: column;
+      width: 50px;
+      height: 50px;
+      .blackicons {
+        margin: 0 5px;
+        @include flexCenter(column, nowrap);
+        &:hover {
+          transition: 0.6s ease;
+          transform: scale(1.1);
+        }
+
+        & a {
+          display: flex;
+          width: 50px;
+          height: 50px;
+          border: 2px solid lightgray;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          transition: 0.6s ease;
+        }
+      }
+    }
+
+    h2 {
+      font-weight: 400;
+      color: $mediumBlue;
+      margin: 18px 0;
+    }
+  }
+
+  //////login on tab//
+
+  .modal .modal-box {
+    width: 350px;
+  }
+
+  ////// screen size break ///////
+}
+////// screen size break ///////

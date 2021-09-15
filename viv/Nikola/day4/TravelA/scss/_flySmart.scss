@@ -1,0 +1,62 @@
+.flySmart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  .headlines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: $higherBlue;
+      font-size: 47px;
+      margin-bottom: 50px;
+    }
+    h3 {
+      color: grey;
+      font-weight: 500;
+      margin-top: 60px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+  }
+  ///// breaker for mobile version
+  #lybreaker {
+    display: none;
+  }
+  ///// breaker for mobile version
+  .siconNtext {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 40px;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 60px;
+    .scard {
+      display: flex;
+      flex-direction: row;
+      width: 450px;
+      .card-text {
+        display: inline-block;
+        h3 {
+          margin-bottom: 10px;
+          font-weight: 400;
+          color: $greyDarkBlue;
+          text-shadow: 0px 0px 1px $greyDarkBlue;
+        }
+        p {
+          color: $greyDarkBlue;
+          text-shadow: 0px 0px 1px $greyDarkBlue;
+        }
+      }
+      .card-img {
+        width: 96px;
+        height: 98px;
+        justify-self: center;
+        align-self: center;
+        margin-right: 34px;
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+.tabarea {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $greyDarkBlue;
+  .textBtabs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    a {
+      align-self: center;
+      justify-self: flex-end;
+      position: relative;
+      left: 30.6%;
+      top: 30px;
+      color: $brightBlue;
+      text-decoration: none;
+      border-bottom: dashed 2px $brightBlue;
+    }
+    h1 {
+      font-size: 50px;
+      color: $brightBlue;
+      margin-bottom: 20px;
+    }
+    h4 {
+      color: white;
+      margin-top: 50px;
+      margin-bottom: 5px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    p {
+      width: 50%;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+.tab-content {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100;
+}
+//// tabs switcher ///
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  min-width: 280px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+
+  .nav-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    li {
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 50px;
+
+      a {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: lightgray;
+        text-decoration: none;
+        color: darkgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $brightBlue;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.nav-tab-header .active a {
+  color: $mediumBlue;
+  background-color: white;
+  position: relative;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.nav-tab-header .active {
+  border-top: 6px solid $brightBlue;
+}
+
+.tab-pane {
+  display: none;
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+.tab-pane.active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  background-color: white;
+  p {
+    color: $greyDarkBlue;
+  }
+}
+
+/////// inside style ///////
+
+.roundimg {
+  width: 200px;
+  height: 200px;
+}
+.checkmark {
+  font-size: 20px;
+  span {
+    font-size: 30px;
+    font-weight: 700;
+    color: $higherBlue;
+    margin-right: 6px;
+  }
+  p {
+    color: $greyDarkBlue;
+  }
+}
+.extra {
+  font-size: 20px;
+  color: lightgray;
+  img {
+    position: relative;
+    top: 5px;
+    margin-right: 4px;
+  }
+}
+
+#regular .extra p {
+  color: $greyLight;
+}
+
+#plus {
+  .extra p:nth-of-type(2) {
+    color: $greyLight;
+  }
+  .extra p:nth-of-type(3) {
+    color: $greyLight;
+  }
+  .extra p:nth-of-type(1) {
+    color: $greyDarkBlue;
+    span {
+      font-size: 30px;
+      font-weight: 700;
+      color: $higherBlue;
+      margin-right: 8px;
+    }
+    & img:nth-of-type(1) {
+      display: none;
+    }
+  }
+}
+
+#premium {
+  .extra p {
+    color: $greyDarkBlue;
+    span {
+      font-size: 30px;
+      font-weight: 700;
+      color: $greyDarkBlue;
+      margin-right: 8px;
+    }
+  }
+}

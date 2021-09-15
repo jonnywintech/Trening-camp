@@ -1,0 +1,132 @@
+.footer {
+  @include flexCenter(row, no-wrap);
+  height: 130px;
+  background-color: $higherBlue;
+  .socialIconsv2 {
+    display: none;
+  }
+  #socialIcons {
+    @include flexCenter(row, no-wrap);
+    justify-content: space-between;
+    .xicon-wrap {
+      @include flexCenter(row, no-wrap);
+    }
+    .xicons:hover {
+      transition: 0.6s ease;
+      transform: scale(1.1);
+    }
+
+    & a {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      border: 2px solid white;
+      margin-left: 20px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      transition: 0.6s ease;
+    }
+  }
+  h2 {
+    color: white;
+    margin: 0 30px;
+  }
+  .mailinp {
+    position: relative;
+    bottom: 20px;
+    button {
+      span {
+        position: relative;
+        font-size: 64px;
+        margin-left: 5px;
+        bottom: 12px;
+      }
+
+      font-size: 18px;
+      background: none;
+      border: none;
+      position: relative;
+      right: 60px;
+      color: white;
+      transition: 0.6s ease;
+      &:hover,
+      &:active {
+        cursor: pointer;
+        color: #38bdff;
+        transition: 0.6s ease;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+#emailft {
+  position: relative;
+
+  border: none;
+  background: none;
+  width: 340px;
+  border-bottom: 2px solid white;
+  font-size: 18px;
+  border-width: 0px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  color: white;
+  &:active {
+    background-color: none;
+  }
+}
+
+#emailft::after {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+////// foooter end //////
+
+.map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 110px;
+  background: white;
+  border-bottom: 9px solid $brightBlue;
+  .paymethod {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+  }
+  .terms {
+    margin-right: 50px;
+  }
+  & a {
+    text-decoration: none;
+    color: $greyLight;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+  div > img {
+    padding: 0 12px;
+    filter: contrast(10%);
+  }
+}
+
+#black-version {
+  @include flexCenter(column, wrap);
+  order: 1;
+  .blackicons-wrap {
+    @include flexCenter(row, wrap);
+  }
+  display: none;
+}
+
+////////  change display  in case it is  error in design ////////
+
+#hideme {
+  display: none;
+}

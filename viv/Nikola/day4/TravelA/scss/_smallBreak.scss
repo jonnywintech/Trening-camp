@@ -1,0 +1,35 @@
+.break {
+  @include flexCenter(row, wrap);
+  height: 100px;
+  .break-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  a {
+    font-size: 2em;
+    margin-left: 20px;
+    font-weight: 700;
+    color: $higherBlue;
+    text-decoration: none;
+  }
+  .dashed {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 278px;
+    height: 2px;
+    background-color: $higherBlue;
+    position: relative;
+    left: 10px;
+    z-index: 1;
+    .white-mark {
+      width: 20px;
+      height: 2px;
+      position: relative;
+      background-color: white;
+      z-index: 2;
+    }
+  }
+}
