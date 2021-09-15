@@ -1,0 +1,39 @@
+.page-title{
+    color: red;
+}
+
+#rasa{
+    color: green;
+}
+
+.page-title:hover{
+    color:hotpink;
+}
+
+.page-title:active {
+   font-size: 12px;
+   line-height: 14px;
+   font-weight: bold;
+   display: 
+
+
+}
+
+.page-title::after{
+    content: '+'
+}
+
+.page-title::before{
+    content: '+'
+}
+
+li:nth-child(even){
+    color: darkturquoise
+}
+
+.box{
+    width: 300px;
+    border: 25px solid green;
+    padding: 50px 20px 10px 5px;
+    margin: 50px 20px 10px 5px;
+}

@@ -1,0 +1,92 @@
+.header{
+    font-size: 100px;
+    font-style: Quimera;
+    text-align: center;   
+
+}
+.pagetitle{
+    font-size:50px;
+    font-style: Quimera;
+}
+.text{
+    font-size: 25px;
+    text-align: justify;
+    
+}
+
+
+.div1{
+    text-align: justify;
+   
+}
+
+.wraper{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.p2{
+    column-count: 4;
+    column-gap: 20px;
+    
+}
+.divcina{
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 3px  solid black;
+}
+.klasa1{
+    position: relative;
+    text-align: justify;
+    margin: 20px 20px;
+}
+.klasa2{
+    position: relative;
+    text-align: justify;
+    margin: 20px 20px;
+
+}
+.klasa3{
+    position: relative;
+    text-align: justify;
+    margin: 20px 20px;
+}
+.klasa2::before{
+    content: "";
+    position: absolute;
+    left: -20;
+    top: 58;
+    height:150px;
+    width: 2px;
+    background-color:black;
+}
+.klasa2::after{
+    content: "";
+    position: absolute;
+    right: -20;
+    top: 58;
+    height:150px;
+    width: 2px;
+    background-color:black;
+}
+
+.c1{
+    text-align: center;
+}
+.d1{
+    text-align: center;
+}
+.divcina2{
+    display: block;
+    margin-top: 470px;
+    margin-left: 20px;
+    max-width: 250px;
+    
+    
+}
+.divcici{
+    border-bottom:2px solid black;
+}
+.tata{
+    display: flex;
+}

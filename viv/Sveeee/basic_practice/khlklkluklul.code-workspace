@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "sub_pages"
+		},
+		{
+			"path": "css"
+		}
+	],
+	"settings": {}
+}
